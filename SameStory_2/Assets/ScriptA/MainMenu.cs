@@ -12,17 +12,14 @@ public class MainMenu : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom(inputFieldNameRoom.text, roomOptions);
 
     }
-
-    public void JoinRoom()
+    public override void OnCreatedRoom()
     {
-
-        PhotonNetwork.JoinRoom(inputFieldNameRoom.text);
-    }
-
-    public void OnJoinedRoom()
-    {
-
+        // PhotonNetwork.CreateRoom(inputFieldNameRoom.text);
         PhotonNetwork.LoadLevel("Game");
     }
+    public void JoinRoom() => PhotonNetwork.JoinRoom(inputFieldNameRoom.text);
+
+
+    public override void OnJoinedRoom() => PhotonNetwork.LoadLevel("Game");
 
 }
