@@ -45,7 +45,7 @@ public class HexGrid : MonoBehaviour
         return HexCoordinates.ConvertPositionToOffset(worldposition);
     }
 
-    public static class Direction
+    public static class Direction //лісти начальних координат і наступних координат
     {
         public static List<Vector3Int> directionsOffsetOdd = new List<Vector3Int>
         {

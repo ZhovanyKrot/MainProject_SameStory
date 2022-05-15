@@ -14,14 +14,14 @@ public class Hex : MonoBehaviour
 
     public Vector3Int HexCoords => hexCoordinates.GetHexCoords();
 
-    public int GetCost() => hexType switch
+    public int GetCost() => hexType switch // цена кожного hex tile 
     {
         HexType.Difficult => 20,
         HexType.Default => 10,
         HexType.Road => 5,
         _ => throw new Exception($"Hex of type{hexType} not supported")
     };
-    public bool IsObstacle()
+    public bool IsObstacle() 
     { return this.hexType == HexType.Obstracle; }
     public bool IsWater()
     { return this.hexType == HexType.Water; }

@@ -364,6 +364,7 @@
 "Assets/Samples/Universal RP/12.1.6/URP Package Samples/RendererFeatures/KeepFrame/KeepFrameFeature.cs"
 "Assets/Samples/Universal RP/12.1.6/URP Package Samples/SharedAssets/Scripts/AutoLoadPipelineAsset.cs"
 "Assets/Samples/Universal RP/12.1.6/URP Package Samples/SharedAssets/Scripts/FirstPersonController.cs"
+"Assets/Scripts/CameraControl.cs"
 "Assets/Scripts/GlowHighlight.cs"
 "Assets/Scripts/GraphSearch.cs"
 "Assets/Scripts/Hex.cs"
